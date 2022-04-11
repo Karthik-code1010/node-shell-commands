@@ -1,7 +1,7 @@
 const { exec } = require('child_process');
 //linux pwd 
 //windows dir
-exec('dir', (error, stdout, stderr) => {
+exec('docker images', (error, stdout, stderr) => {
   if (error) {
     console.log(`error: ${error.message}`);
     return;
